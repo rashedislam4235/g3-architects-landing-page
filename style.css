@@ -105,11 +105,58 @@
 .banner-image{
     width: 100%;
 }
+/* main , section-- team-container realated styles */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.team-container{
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+
+    
+}
+.our-features{
+    max-width: 537px;
+    
+}
+.teams-image{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.guick-list{
+    font-size: 2.81rem;
+    margin-bottom: 24px;
+}
+.of{
+    color: black;
+    font-weight: bold;
+}
+.f{
+    color: rgba(255, 144, 14, 1);
+    font-size: bold;
+}
+.p{
+    line-height: 26px;
+    margin-bottom: 32px;
+}
 @media screen and (max-width:576px) {
     .navbar, 
     .nav-links{
         flex-direction: column;
     }
 
+.team-container {
+    flex-direction: column;
+}
+.teams-image {
+    
+    grid-template-columns: repeat(1, 1fr);
+}
     
 }
+
