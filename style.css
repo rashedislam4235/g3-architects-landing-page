@@ -42,15 +42,10 @@
     border-radius: 8px;
     border: none;
 }
-
-
-
-
-
-
-
-
-
+/* header */
+.header{
+    margin-bottom: 85px;
+}
 /* navbar related styles */
 .navbar{
     justify-content: space-between;
@@ -105,17 +100,14 @@
 .banner-image{
     width: 100%;
 }
-/* main , section-- team-container realated styles */
-main{
-    max-width: 1140px;
-    margin: 0 auto;
 
-}
 .team-container{
     align-items: center;
     gap: 73px;
-    margin-top: 85px;
-    margin-bottom: 130px;
+    margin-top: 100px;
+  
+    max-width: 1140px;
+    margin: 0 auto;
 
     
 }
@@ -144,19 +136,86 @@ main{
     line-height: 26px;
     margin-bottom: 32px;
 }
+/* features section styles */
+.features{
+    gap: 146px;
+    max-width: 1370px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+.Features-div1{
+    max-width: 800px;
+    
+
+}
+.Features-div1 h3{
+    font-size: 2.4rem;
+    font-family: bold;
+    margin-bottom: 24px;
+    
+}
+.Features-div1 p{
+    margin-bottom: 30px;
+}
+.Features-div1 p , .Dexktop-card p , .Drag-card p, .Awesome-card p, .Super-card p{
+   line-height: 26px;
+   font-size: 0.7rem;
+    
+}
+ .Dexktop-card h1 , .Drag-card h1, .Awesome-card h1, .Super-card h1{
+   font-size: 1.2rem;
+   font-weight: 600;
+    
+}
+ .Dexktop-card, .Drag-card,.Awesome-card,.Super-card{
+    margin-bottom: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+ .section-image {
+    max-width: 708px;
+ } 
+ .speacial-btn{
+    color: white;
+    padding: 45px 42px;
+    background-color:rgba(255, 144, 14, 1);
+    border: none;
+    border-radius: 8px;
+    margin-left: -92px;
+    margin-top: -130px;
+ } 
+ .year{
+    font-size: 4rem;
+    font-weight: bold;
+
+ }
+ .exper{
+    font-size: 1.56rem;
+    font-weight: 600;
+
+ }
+
 @media screen and (max-width:576px) {
     .navbar, 
-    .nav-links{
+    .nav-links , .team-container,.features{
         flex-direction: column;
     }
 
-.team-container {
-    flex-direction: column;
-}
 .teams-image {
     
     grid-template-columns: repeat(1, 1fr);
 }
+.section-image img {
+    width: 100%;
     
+}
+.speacial-btn {
+   
+    margin-left: 0px;
+    margin-top: 10px;
+}
+   
 }
 
